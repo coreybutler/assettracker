@@ -1,0 +1,2 @@
+Ext.ux.TabCloseMenu=function(){var a,c,b;this.init=function(e){a=e;a.on("contextmenu",d);};function d(h,g,i){if(!c){c=new Ext.menu.Menu([{id:a.id+"-close",text:"Close Tab",handler:function(){a.remove(b);}},{id:a.id+"-close-others",text:"Close Other Tabs",handler:function(){a.items.each(function(e){if(e.closable&&e!=b){a.remove(e);
+}});}}]);}b=g;var f=c.items;f.get(a.id+"-close").setDisabled(!g.closable);var j=true;a.items.each(function(){if(this!=g&&this.closable){j=false;return false;}});f.get(a.id+"-close-others").setDisabled(j);c.showAt(i.getPoint());}};

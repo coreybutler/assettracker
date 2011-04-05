@@ -1,0 +1,124 @@
+/*Standard Styles*/
+.icon-os-mac {background-image:url(./icons/icon_mac_small.png) !important;}
+.icon-os-unix {background-image:url(./icons/icon_linux_small.png) !important;}
+.icon-os-win {background-image:url(./icons/icon_win_small.png) !important;}
+.icon-os-server,.icon-computer {background-image:url(./icons/icon_server_small.png) !important;}
+.icon-rdp {background-image:url(./icons/icon_rdp.png) !important;}
+.icon-ssh {background-image:url(./icons/icon_ssh.png) !important;}
+.icon-remove {background-image:url(./icons/cross.png) !important;}
+.icon-edit {background-image:url(./icons/pencil.png) !important;}
+.icon-save {background-image:url(./icons/save.gif) !important;}
+.icon-refresh {background-image:url(./icons/arrow_refresh.png) !important;}
+.icon-add {background-image:url(./icons/add.png) !important;}
+.icon-lock {background-image:url(./icons/lock.png) !important;}
+.icon-login {background-image:url(./icons/key_go.png) !important;}
+.icon-pdf {background-image:url(./icons/page_white_acrobat.png) !important;}
+.icon-archive-reports {background-image:url(./icons/folder_page_white.png) !important;}
+.icon-folder-go {background-image:url(./icons/folder_go.png) !important;}
+.icon-user-gray {background-image:url(./icons/user_gray.png) !important;}
+.icon-cancel {background-image:url(./icons/cancel.png) !important;}
+.icon-home {background-image:url(./icons/house.png) !important;}
+.icon-gear {background-image:url(./icons/cog.png) !important;}
+.icon-new {background-image:url(./icons/new.png) !important;}
+.icon-expandall {background-image:url(./icons/expand-all.gif) !important;}
+.icon-ecor {background-image:url(./icons/icon_ecorgroup.png) !important;}
+.help{color:#333;font-style:italic;}
+.headerTip{
+	color:#336699;
+	font-weight:none !important;
+	font-size:x-small;
+	font-style:italic;
+	margin-top:-4px;
+}
+DIV.environment {
+	background-image:url(./icons/new.png);
+	background-repeat:no-repeat;
+	height:16px;
+	font-size:small;
+	color:#336699;
+	padding-left:20px;
+	font-weight:bold;
+}
+DIV.orphan {
+	background-image:url(./icons/exclamation.png) !important;
+	font-style:italic;
+	color:#666 !important;
+}
+DIV#dashboard {
+	padding:15px;
+	font-family:Tahoma,Arial;
+	font-size:11px;
+	color: #333;
+	width:94%;
+}
+DIV#dashboard DIV.include {
+	border-top:1px dotted #ccc;
+	margin-top:15px;
+	padding-top:15px;
+	clear:both;
+}
+H1.title {font-size:175%;}
+DIV.newapps {
+	background:#f6f6f6;
+	padding:10px;
+	margin-top:10px;
+	color:#666;
+}
+DIV.newapps H3 {margin-bottom:4px;color:#336699;}
+DIV.newapps A {
+	color:brown;
+	text-decoration:none;
+}
+DIV.newapps A:HOVER {
+	text-decoration:underline;
+}
+.reportdescription{
+	padding:4px;
+	padding-left:9px;
+	padding-top:2px important;
+	color:#666666;
+	background:#EEEEEE;
+}
+
+
+
+/*Add-on Module Styles*/
+.icon-todo{background-image:url(./icons/accept.png) !important;}
+.icon-update{background-image:url(./icons/accept.png) !important;}
+.icon-old{background-image:url(./icons/exclamation.png) !important;}
+DIV.update {
+	background-image:url(./icons/accept.png);
+	background-repeat:no-repeat;
+	height:23px;
+	font-size:xx-small;
+	color:#777;
+	padding-left:20px;
+}
+DIV.overdue {	background-image:url(./icons/exclamation.png) !important;}
+DIV.overdue H4 {color:maroon !important;}
+INPUT.update, INPUT.launch {
+	font-size:x-small;
+	color:blue;
+	background:none;
+	background-image:url(./icons/computer_go.png) !important;
+	background-repeat:no-repeat;
+	padding-left:18px;
+	border:0px !important;
+	cursor:pointer;
+}
+INPUT.launch {background-image:url(./icons/icon_rdp.png) !important;}
+INPUT.update A:HOVER, INPUT.launch A:HOVER,
+INPUT.update:HOVER,INPUT.launch:HOVER{text-decoration:underline;}
+
+
+/*Add-on Backup Schedule*/
+.icon-calendar{background-image:url(./icons/calendar.png) !important;}
+.griddropdown {padding-left:10px;padding-bottom:10px;padding-top:3px;color:#666;}
+
+
+
+/*Add-on Reporting Styles*/
+.icon-report {background-image:url(./icons/report.png) !important;}
+.icon-play {background-image:url(./icons/control_play.png) !important;}
+.icon-check{background-image:url(./icons/accept.png) !important;}
+.icon-invert{background-image:url(./icons/arrow_switch.png) !important;}

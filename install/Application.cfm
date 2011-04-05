@@ -4,7 +4,7 @@
 
 	<cfset totalsteps=5/>
 
-	<cfif not findnocase("index.cfm",CGI.SCRIPT_NAME)>
+	<cfif not findnocase("index.cfm",CGI.PATH_INFO)>
 		<cfif StructKeyExists(form,"accept")>
 			<cfset session.license = true>
 		</cfif>

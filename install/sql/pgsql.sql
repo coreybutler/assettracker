@@ -5,10 +5,8 @@ DROP TABLE IF EXISTS sysnotes;
 DROP TABLE IF EXISTS updlog;
 DROP TABLE IF EXISTS updnotes;
 DROP TABLE IF EXISTS updpref;
-DROP TABLE IF EXISTS bkp;
 DROP SEQUENCE IF EXISTS app_id_seq;
 DROP SEQUENCE IF EXISTS chg_id_seq;
-DROP SEQUENCE IF EXISTS bkp_id_seq;
 
 CREATE SEQUENCE app_id_seq
   INCREMENT 1
@@ -18,13 +16,6 @@ CREATE SEQUENCE app_id_seq
   CACHE 1;
 
   CREATE SEQUENCE chg_id_seq
-  INCREMENT 1
-  MINVALUE 1
-  MAXVALUE 9223372036854775807
-  START 1
-  CACHE 1;
-
- CREATE SEQUENCE bkp_id_seq
   INCREMENT 1
   MINVALUE 1
   MAXVALUE 9223372036854775807
@@ -112,24 +103,6 @@ CREATE TABLE updpref
   "sysid" character varying NOT NULL,
   ord integer NOT NULL DEFAULT 99999,
   CONSTRAINT pk_updpref PRIMARY KEY (uid, sysid)
-)
-WITH (
-  OIDS=FALSE
-);
-
-CREATE TABLE bkp
-(
-  enddt timestamp with time zone,
-  recur numeric NOT NULL DEFAULT 1,
-  recurtype character varying NOT NULL DEFAULT '?'::character varying,
-  "sysid" character varying NOT NULL,
-  dur numeric NOT NULL DEFAULT 8,
-  durtype character varying NOT NULL,
-  note character varying(2000) NOT NULL,
-  tm time with time zone NOT NULL,
-  startdt timestamp with time zone NOT NULL DEFAULT now(),
-  id serial NOT NULL,
-  CONSTRAINT pk_bkp PRIMARY KEY (id)
 )
 WITH (
   OIDS=FALSE
