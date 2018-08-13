@@ -4,6 +4,8 @@ or [Twitter (@goldglovecb)](http://twitter.com/goldglovecb).
 
 AssetTracker is a web-based tool for documenting assets in your IT infrastructure. It helps keep track of changing information about desktops, servers, and network devices. All of this leads to a better understanding of your infrastructure footprint and how to optimize it.
 
+![](https://raw.githubusercontent.com/coreybutler/assettracker/master/9bb0d8bf183ac865203825aa4b2cbc89-original.png)
+
 <b>Features:</b>
 
 * Sleek Web-based User Interface
